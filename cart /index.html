@@ -5,58 +5,127 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cart</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cart.css">
 </head>
 <body>
-  <nav>
-    <div class="nav-container">
-      <img class="nav-img" src="../project/image/Ioca2Q01_1.svg" alt="logo" width="60px">
-      <div class="nav-links">
-        <a class="nav-items" href="">Nos Service</a>
-        <a class="nav-items" href="">Sneakers</a>
-        <a class="nav-items" href="">Accessories</a>
-        <a class="nav-items" href="">Homme</a>
-        <a class="nav-items" href="">Femme</a>
-        <a class="nav-items" href="">Solde</a>
-      </div>
-      <div class="nav-icons">
-        <input class="search-input" type="text" placeholder="search">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
-        <i class="fa-solid fa-user"></i>
-      </div>
-    </div>
-  </nav>
-
-  <section>
-    <div class="cart-container">
-      <div>
-        <img class="cart-img" src="../project/image/items/26APRmens52533.webp" alt="Model" width="400px">
-      </div>
-      <div class="cart-title">
-        <p class="cloth-name">G.O.D Red X <br> Crimson Pull</p>
-        <p class="cart-desp">"Men's Crimson Red Pullover This soft and cozy cotton pull features a classic crewneck design and clean lines. Perfect for layering or wearing on its own."</p>
-      </div>
-      <div class="cart-price">
-        <p class="prix">80€</p>
-        <p class="shipping"><em>Shipping free All <br> Over EU Countries <br><br> For Outside Europe <br> please check out our <br> Shipping information</em></p>
-      </div>
-    </div>
-  </section>  
+    <!--Navbar-->
+    <nav>
+      <a class="nav-items" href="">Nos Service</a>
+      <a class="nav-items" href="">Sneakers</a>
+      <a class="nav-items" href="">Accessories</a>
+      <a class="nav-items" href="">Homme</a>
+      <img class="nav-img" src="../image/Ioca2Q01_1.svg"  alt="logo" width="60px">
+      <a class="nav-items" href="">Femme</a>
+      <a class="nav-items" href="">Solde</a>
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <a href="../cart /index.html"><i class="fas fa-shopping-cart"></i></a>
+      <i class="fa-solid fa-user"></i>
+    </nav>
   
-  <div class="cart-button">
-    <button class="btn-1">Add to Cart</button>
-    <button class="btn-2">Size</button>
-    <button class="btn-3">Add to Fav</button>
-  </div>
 
-  <div class="cart-end">
-    <ul class="plus-list">
-      <li>Shipping & return policy</li>
-      <li>Care</li>
-      <li>Warranty</li>
-      <li>Review</li>
-    </ul>
-  </div>
+  <main> 
+     <!--afte the nav-->
+     <h5>Home | Shopping Bag</h5>
+    
+      <div class="your-bag">
+        <h2>Your Bag</h2>
+      </div>
+
+      <div class="wish-bag">
+        <h4 class="underline">Shopping Bag(1)</h4>
+        <h4>Wishlist(0)</h4>
+      </div>
+
+      <div class="two-btn">
+        <button class="continue btn">CONTINUE SHOPPING</button>
+        <button class="shopping btn">CHECKOUT NOW</button>
+      </div>
+
+      <hr class="line top">
+
+      <div class="main-container">
+        <div class="item-pic">
+          <img src="../image/items/26APRmens52533.webp" alt="clothes">
+        </div>
+
+        <div class="details">
+          <h4>Red Jacke</h4>
+          <p>000123754305</p>
+          <p>99€</p>
+          <p>Size M</p>
+        </div>
+
+        <div class="stock">
+          <p>Only 1 in stock</p>
+        </div>
+
+        <div id="x">
+          <p>X</p>
+        </div>
+
+        <section class="checkout">
+          <h2>ORDER SUMMARY</h2>
+
+          <div class="flex">
+            <p>Subtotal</p>
+            <p>99€</p>
+          </div>
+
+          <div class="flex-two">
+            <p>Shipping Price</p>
+            <p>1.50€</p>
+          </div>
+
+          <div class="flex-three">
+            <h4>Estimated Total</h4>
+            <p>100.50€</p>
+          </div>
+
+          <div class="last-btn">
+            <button>CHECKOUT NOW</button>
+          </div>
+
+        </section>
+      </div>
+
+      <hr class="line bottom">
+
+      <footer>
+        <div class="promo">
+          <h4>Promotion Code 20%</h4>
+          <p>pour la prochain achat</p>
+        </div>
+
+        <div>
+          <p class="ft-text">Payment Methods</p>
+        </div>
+
+        <div class="pay-icon">
+          <svg class="social" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+            <path fill="#1565C0" d="M45,35c0,2.209-1.791,4-4,4H7c-2.209,0-4-1.791-4-4V13c0-2.209,1.791-4,4-4h34c2.209,0,4,1.791,4,4V35z"></path><path fill="#FFF" d="M15.186 19l-2.626 7.832c0 0-.667-3.313-.733-3.729-1.495-3.411-3.701-3.221-3.701-3.221L10.726 30v-.002h3.161L18.258 19H15.186zM17.689 30L20.56 30 22.296 19 19.389 19zM38.008 19h-3.021l-4.71 11h2.852l.588-1.571h3.596L37.619 30h2.613L38.008 19zM34.513 26.328l1.563-4.157.818 4.157H34.513zM26.369 22.206c0-.606.498-1.057 1.926-1.057.928 0 1.991.674 1.991.674l.466-2.309c0 0-1.358-.515-2.691-.515-3.019 0-4.576 1.444-4.576 3.272 0 3.306 3.979 2.853 3.979 4.551 0 .291-.231.964-1.888.964-1.662 0-2.759-.609-2.759-.609l-.495 2.216c0 0 1.063.606 3.117.606 2.059 0 4.915-1.54 4.915-3.752C30.354 23.586 26.369 23.394 26.369 22.206z"></path><path fill="#FFC107" d="M12.212,24.945l-0.966-4.748c0,0-0.437-1.029-1.573-1.029c-1.136,0-4.44,0-4.44,0S10.894,20.84,12.212,24.945z"></path>
+          </svg>
+          <svg class="social" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+            <path fill="#3F51B5" d="M45,35c0,2.209-1.791,4-4,4H7c-2.209,0-4-1.791-4-4V13c0-2.209,1.791-4,4-4h34c2.209,0,4,1.791,4,4V35z"></path><path fill="#FFC107" d="M30 14A10 10 0 1 0 30 34A10 10 0 1 0 30 14Z"></path><path fill="#FF3D00" d="M22.014,30c-0.464-0.617-0.863-1.284-1.176-2h5.325c0.278-0.636,0.496-1.304,0.637-2h-6.598C20.07,25.354,20,24.686,20,24h7c0-0.686-0.07-1.354-0.201-2h-6.598c0.142-0.696,0.359-1.364,0.637-2h5.325c-0.313-0.716-0.711-1.383-1.176-2h-2.973c0.437-0.58,0.93-1.122,1.481-1.595C21.747,14.909,19.481,14,17,14c-5.523,0-10,4.477-10,10s4.477,10,10,10c3.269,0,6.162-1.575,7.986-4H22.014z"></path>
+          </svg>
+          <svg class="social" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+            <path fill="#0d62ab" d="M18.7,13.767l0.005,0.002C18.809,13.326,19.187,13,19.66,13h13.472c0.017,0,0.034-0.007,0.051-0.006	C32.896,8.215,28.887,6,25.35,6H11.878c-0.474,0-0.852,0.335-0.955,0.777l-0.005-0.002L5.029,33.813l0.013,0.001	c-0.014,0.064-0.039,0.125-0.039,0.194c0,0.553,0.447,0.991,1,0.991h8.071L18.7,13.767z"></path><path fill="#199be2" d="M33.183,12.994c0.053,0.876-0.005,1.829-0.229,2.882c-1.281,5.995-5.912,9.115-11.635,9.115	c0,0-3.47,0-4.313,0c-0.521,0-0.767,0.306-0.88,0.54l-1.74,8.049l-0.305,1.429h-0.006l-1.263,5.796l0.013,0.001	c-0.014,0.064-0.039,0.125-0.039,0.194c0,0.553,0.447,1,1,1h7.333l0.013-0.01c0.472-0.007,0.847-0.344,0.945-0.788l0.018-0.015	l1.812-8.416c0,0,0.126-0.803,0.97-0.803s4.178,0,4.178,0c5.723,0,10.401-3.106,11.683-9.102	C42.18,16.106,37.358,13.019,33.183,12.994z"></path><path fill="#006fc4" d="M19.66,13c-0.474,0-0.852,0.326-0.955,0.769L18.7,13.767l-2.575,11.765	c0.113-0.234,0.359-0.54,0.88-0.54c0.844,0,4.235,0,4.235,0c5.723,0,10.432-3.12,11.713-9.115c0.225-1.053,0.282-2.006,0.229-2.882	C33.166,12.993,33.148,13,33.132,13H19.66z"></path>
+          </svg>
+          <svg class="social apple" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="" height="100" viewBox="0,0,256,256">
+            <g fill="#339af0" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M9.98438,15.00195c-0.835,0.04 -1.86608,0.57136 -2.45508,1.31836c-0.54,0.644 -1.00177,1.68988 -0.88477,2.67188c0.943,0.082 1.88561,-0.49175 2.47461,-1.21875c0.58,-0.747 0.96323,-1.74848 0.86523,-2.77148zM18,17v15h2.375v-5h3.25c2.983,0 5.125,-2.075 5.125,-5c0,-2.925 -2.10288,-5 -5.04687,-5zM20.375,19h2.75c2.047,0 3.25,1.105 3.25,3c0,1.895 -1.193,3 -3.25,3h-2.75zM9.875,19.5c-1.375,0 -2.358,0.75 -3,0.75c-0.652,0 -1.625,-0.74023 -2.75,-0.74023c-1.375,0 -2.72164,0.86309 -3.43164,2.12109c-1.459,2.515 -0.37875,6.23816 1.03125,8.28516c0.691,1.014 1.52539,2.08398 2.65039,2.08398c1.031,-0.039 1.38,-0.625 2.625,-0.625c1.254,0 1.625,0.625 2.75,0.625c1.125,0 1.80609,-1.03092 2.49609,-2.04492c0.788,-1.15 1.10991,-2.27108 1.12891,-2.33008c-0.019,-0.019 -2.17727,-0.84775 -2.19727,-3.34375c-0.019,-2.086 1.7013,-3.08067 1.7793,-3.13867c-0.973,-1.442 -2.58203,-1.64258 -2.95703,-1.64258zM34.19922,21c-2.489,0 -4.32849,1.39545 -4.39648,3.31445h2.10938c0.174,-0.912 1.03675,-1.50977 2.21875,-1.50977c1.433,0 2.24219,0.65628 2.24219,1.86328l0.00195,0.83203l-2.93164,0.1543c-2.721,0.161 -4.19336,1.2543 -4.19336,3.1543c0,1.919 1.52022,3.19336 3.69922,3.19336c1.472,0 2.83803,-0.73163 3.45703,-1.89062h0.04883v1.77539h2.16797v-7.37109c0.001,-2.139 -1.74083,-3.51562 -4.42383,-3.51562zM39.5,21l4.00781,10.94922l-0.21484,0.66602c-0.362,1.129 -0.94814,1.5625 -1.99414,1.5625c-0.179,0 -0.51783,-0.01811 -0.67383,-0.03711v1.80469c0.158,0.035 0.70791,0.05469 0.87891,0.05469c2.307,0 3.3928,-0.86795 4.3418,-3.50195l4.1543,-11.49805h-2.4043l-2.78711,8.88477h-0.04883l-2.78711,-8.88477zM36.375,27l-0.00781,0.86719c0,1.387 -1.20106,2.375 -2.78906,2.375c-1.249,0 -2.04297,-0.58823 -2.04297,-1.49023c0,-0.931 0.76552,-1.47259 2.22852,-1.55859z"></path></g></g>
+          </svg>
+        </div>
+
+        </div>
+      </footer>
+
+
+
+  </main>     
+
+
+
+
+
+
 </body>
 </html>

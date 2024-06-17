@@ -1,0 +1,309 @@
+/* editing the navbar */
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: black;
+  height: 5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a:hover{
+  cursor: pointer;
+  text-decoration: underline red 4px;
+}
+
+nav a, i{
+  color: white;
+  text-decoration: none;
+}
+
+/* after the navbar */
+
+.your-bag{
+  text-align: center;
+}
+
+.wish-bag{
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+.two-btn{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 8rem;
+}
+
+.btn{
+  height: 3rem;
+  width: 12rem;
+  border-radius: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.btn:hover{
+  opacity: 0.4;
+}
+
+.continue{
+  border: solid grey;
+  color: black;
+  background-color: white;
+}
+
+.shopping{
+  background-color: black;
+  color: whitesmoke;
+}
+
+/* modifying the main container */
+
+.details{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.main-container{
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 8rem;
+}
+
+.item-pic img{
+  width: 180px;
+  border-radius: 10px;
+}
+
+.flex, .flex-two, .flex-three{
+  justify-content: center;
+  display: flex;
+}
+
+.flex{
+  gap: 12rem;
+}
+
+.flex-two{
+  gap: 8rem;
+}
+
+.flex-three{
+  gap: 6rem;
+}
+
+.last-btn button {
+  background-color: black;
+  color: white;
+  height: 2rem;
+  width: 20rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.last-btn button:hover{
+  opacity: 0.6;
+}
+
+.checkout{
+  padding: 1rem;
+  background-color: rgb(241, 241, 241);
+  height: 300px;
+  width: 350px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.checkout h2{
+  text-align: center;
+}
+
+.line{
+   width: 102rem;
+}
+
+.bottom{
+  width: 75rem;
+  position: absolute;
+  left: 8rem;
+  bottom: 17rem;
+}
+.top{
+  margin-top: 2rem;
+}
+
+.promo{
+  padding-left: 8rem;
+}
+
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pay-icon{
+  display: flex;
+  gap: 0.5rem;
+  width: 11rem;
+}
+
+.ft-text{
+  padding-left: 65rem;
+  padding-top: 1.5rem;
+}
+
+.pay-icon{
+  padding-right: 7rem;
+}
+
+
+/* media queries for tablet */
+
+@media only screen and (min-width: 481px) and (max-width: 834px){
+  .two-btn{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 4rem;
+  }
+
+  .line{
+    width: 50rem;
+ }
+
+  .main-container{
+    padding: 1rem;
+    gap: 4rem;
+  }
+
+  .bottom{
+    position: absolute;
+    left: 1rem;
+    bottom: 25rem;
+  }
+
+  .checkout{
+    margin-bottom: 3rem;
+  }
+
+  footer{
+    display: flex;
+    justify-content: center;
+    gap: 12rem;
+  }
+
+  .promo{
+    padding-left: 0rem;
+  }
+
+  .ft-text{
+    padding-left: 0rem;
+    padding-top: 0rem;
+  }
+
+  .pay-icon{
+    position: absolute;
+    bottom: -10rem;
+    left: 33rem;
+  }
+}
+
+
+/* medaia queries for phone */
+
+@media only screen and (max-width: 480px){
+  .nav-items{
+    display: none;
+  }
+
+  nav{
+    display: flex;
+    justify-content: center;
+  }
+  .nav-img{
+    width: 60px;
+    margin-left: 120px;
+  }
+  .fa-solid, .fas{
+    margin-left: 30px;
+  }
+
+  .two-btn{
+    display: none;
+  }
+
+  .line{
+    width: 20rem;
+ }
+
+ .bottom{
+  width: 20rem;
+  left: 2rem;
+  bottom: -11rem;
+}
+
+ .details{
+  margin-top: -7rem;
+ }
+
+ .stock, #x{
+  margin-top: -7rem;
+ }
+
+ .ft-text{
+  padding-left: 0rem;
+  padding-top: 0rem;
+}
+
+.checkout{
+  padding: 0;
+  margin-top: -10rem;
+}
+
+
+.ft-text{
+  margin-top: 3rem;
+}
+
+.pay-icon{
+  margin-top: -2rem;
+}
+}
+
+/* media queries for laptop */
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px){
+  .line{
+    width: 80rem;
+ }
+
+ .bottom{
+  width: 55rem;
+  position: absolute;
+  left: 5rem;
+  bottom: 7rem;
+}
+
+.ft-text{
+  margin-top: -7rem;
+}
+
+.pay-icon{
+  padding-left: 65rem;
+  margin-top: -5rem;
+}
+
+}

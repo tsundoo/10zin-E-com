@@ -1,57 +1,75 @@
-
 body{
   margin: 0;
 }
+
 header{
   height: 100vh;
 }
+
 aside{
   height: 35vh;
   background-color: crimson;
   margin-top: -2.2rem;
 }
+
 main{
   height: 100vh;
   background: linear-gradient(black, rgb(189, 186, 186), black);
+  padding: 5rem 0;
 }
+
 footer{
   height: 90vh;
   background-color: black;
+}
+
+section{
+  height: 100vh;
+  padding: 2.5rem 0 0 2.5rem;
 }
 /* modifying the navbar section */
 
 nav{
   background-color: black;
   display: flex;
-  justify-content: center;
-  gap: 4.5rem;
+  justify-content: space-evenly;
   align-items: center;
   height: 16vh;
 }
+
 .nav-items{
   font-size: large;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-decoration: none;
   color: whitesmoke;
 }
+
 .nav-img{
   width: 80px;
 }
+
 i{
   font-size: x-large;
   margin-left: -2rem;
   color: whitesmoke;
 }
+
 .fa-magnifying-glass{
-  margin-left: -100px;
+  margin-left: -140px;
   color: black;
   font-size: medium;
 }
+
 input{
   border-radius: 1rem;
   padding: 5px;
   border: none;
 }
+
+nav a:hover{
+  text-decoration: underline red 5px;
+}
+
 /* modifying home image */
 .home-img{
   display: block;
@@ -59,20 +77,24 @@ input{
   height: 84vh;
   background-position: left;
 }
+
 .home-text-1{
   position: absolute;
-  left: 3vw;
+  left: 12vw;
 }
+
 .home-text-2{
   position: absolute;
   left: 66.1vw;
 }
+
 .home-text-1, .home-text-2{
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-shadow: 0 0 7px black;
   font-size: 5rem;
-  top: 18vh;
+  top: 21vh;
 }
+
 #text-color{
   color: black;
 }
@@ -83,9 +105,9 @@ input{
   text-wrap: wrap;
   font-size: 2.2rem;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  width: 80rem;
+  width: auto;
   text-align: center;
-  padding: 6%;
+  padding: 5%;
   color: whitesmoke;
 }
 
@@ -99,12 +121,13 @@ input{
   border-radius: 10px;
  
 }
+
 .container{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
+  justify-content: space-evenly;
 }
+
 .trends{
   text-align: center;
   font-size: 4.5rem;
@@ -112,6 +135,7 @@ input{
   text-shadow: 0 0 23px black;
   margin: 30px 0 0 0;
   letter-spacing: 40px;
+  padding: 4rem 0;
 }
 
 /* flip card section */
@@ -158,48 +182,56 @@ input{
   align-items: center;
   transform: rotateY(180deg);
 }
+
 #f-one, #b-one{
   background-image: url(./image/items/7-DEC-MW5559-2.webp);
   background-size: cover;
 }
+
 #f-two, #b-two{
   background-image: url(./image/items/26APRmens52533.webp);
   background-size: cover;
 }
+
 #f-three, #b-three{
   background-image: url(./image/items/7-DEC-MW5395b.webp);
   background-size: cover;
 }
+
 #f-four, #b-four{
   background-image: url(./image/items/Artboard_1_8.webp);
   background-size: cover;
 }
+
 #f-five, #b-five{
   background-image: url(./image/items/jorts_square_1.webp);
   background-size: cover;
 }
+
 #f-six, #b-six{
   background-image: url(./image/items/MW-2830868.webp);
   background-size: cover;
 }
+
 #f-seven, #b-seven{
   background-image: url(./image/items/MW-2830890.webp);
   background-size: cover;
 }
+
 #f-eight, #b-eight{
   background-image: url(./image/items/MW-2831054.webp);
   background-size: cover;
 }
+
 #f-nine, #b-nine{
   background-image: url(./image/items/MW-2831326.webp);
   background-size: cover;
 }
+
 #f-ten, #b-ten{
   background-image: url(./image/items/MW4-SEP4998.webp);
   background-size: cover;
 }
-
-
 
 /* back card positioning */
 .back-head{
@@ -208,20 +240,65 @@ input{
   font-family: Arial, Helvetica, sans-serif;
   text-shadow: 0 0 10px black;
 }
+
 .back-desrp{
   color: whitesmoke;
   font-family: Arial, Helvetica, sans-serif;
   text-shadow: 0 0 10px black;
 }
+
 .back-button-1{
   margin-bottom: 0.9rem;
 }
+
 .back-button-1, .back-button-2{
   border-radius: 0.4rem;
   font-family: Georgia, 'Times New Roman', Times, serif;
   background-color: whitesmoke;
   color: black;
   border: 0.8px solid ;
+}
+
+
+/* modifying the moving text part */
+figure{
+  margin: 0;
+}
+.marquee-rtl {
+  margin-left: -2.5rem;
+  min-height: 6vh;     
+  min-width: 99vw;                 /* largeur de la fenÃªtre */
+  border: 8px solid whitesmoke;
+  overflow: hidden;                     /* masque tout ce qui dÃ©passe */
+  box-shadow: 0 .25em .5em #CCC,inset 0 0 1em .25em #CCC;
+}
+
+.marquee-rtl > :first-child {
+  display: inline-block;                /* modÃ¨le de boÃ®te en ligne */
+  padding-right: 2em;                   /* un peu d'espace pour la transition */
+  padding-left: 100%;                   /* placement Ã  droite du conteneur */
+  white-space: nowrap;                  /* pas de passage Ã  la ligne */
+  animation: defilement-rtl 14s infinite linear;
+}
+
+.marquee-rtl div{
+  letter-spacing: 0.5rem;
+  font-size: x-large;
+  padding-top: 0.5rem;
+}
+
+span{
+  margin-left: 2rem;
+  letter-spacing: 1.3rem;
+}
+
+@keyframes defilement-rtl {
+  0% {
+    transform: translate3d(0,0,0);      /* position initiale Ã  droite */
+  }
+  100% {
+    transform: translate3d(-100%,0,0);  /* position finale Ã  gauche */
+  }
 }
 
 /* modifying the footer part */
@@ -231,6 +308,7 @@ input{
   color: whitesmoke;
   text-align: center;
 }
+
 .footer-box-1, .footer-box-2{
   height: 8rem;
   width: 25rem;
@@ -248,115 +326,312 @@ input{
   display: flex;
   justify-content: space-around;
 }
+
 .footer-box-1 svg, .footer-box-2 svg{
   width: 2rem;
 }
+
 h4{
   margin-bottom: 0;
 }
+
 .footer-container-2, .footer-container-3{
   display: flex;
   justify-content: space-evenly;
   color: whitesmoke;
 }
+
 .footer-container-2{
   margin-top: 4rem;
 }
+
 .social{
   width: 3rem;
 }
+
 .social-container{
-  margin-left: 10%;
+  margin-left: 15%;
 }
+
 .social-container-2{
-  margin-left: 50%;
+  margin-left: 47%;
 }
+
 .social-container, .social-container-2{
   display: inline-flex;
   margin-top: 3rem;
-  gap: 0.3rem;
+  gap: 0.5rem;
 }
+
 .end{
   color: whitesmoke;
   text-align: center;
 }
 
+footer{
+  border: solid black 10px;
+  border-radius: 8rem;
+}
+
+.footer-container-2 p:hover, .footer-container-3 p:hover{
+  cursor: pointer;
+  text-decoration: underline whitesmoke 3px;
+}
 
 
+/* -------------------------------------------------------------------------- */
 
-/* media queries for tablet */
+/* media queries for the tablet */
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+ input{
+  display: none;
+ }
 
-@media (min-width: 600px) and (max-width: 1024px){
-  /* navbar */
+ nav{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  height: 14vh;
+}
+
+ .nav-items{
+  font-size: small;
+}
+
+.trends{
+  font-size: 3.5rem;
+  color: white;
+  text-shadow: 0 0 23px black;
+  margin: 30px 0 0 0;
+  letter-spacing: 20px;
+}
+
+.home-text-1, .home-text-2{
+  display: none;
+}
+
+.slogan{
+  font-size: 2rem;
+  padding: 10%;
+}
+
+.nav-items{
+  display: none;
+}
+
+.nav-img{
+  width: 80px;
+  position: absolute;
+}
+
+.fa-magnifying-glass{
+  color: white;
+  font-size: large;
+  margin-left: 33rem;
+}
+
+i{
+  margin-left: 8px;
+  font-size: large;
+}
+
+.container{
+  gap: 30px;
+}
+
+main{
+  height: auto;
+  margin-top: -1.3rem;
+}
+
+footer{
+  height: auto;
+  border: none;
+  border-radius: none;
+}
+
+.flip-container{
+  height: 280px;
+  width: 200px;
+  perspective: 500px;
+  margin-top: 1.5rem;
+}
+
+.home-img{
+  display: block;
+  width: 100%;
+  height: 84.5vh;
+  object-fit: cover;
+}
+
+.footer-head{
+  font-size: 0.9rem;
+}
+
+.footer-box-1, .footer-box-2{
+  height: 7rem;
+  width: 20rem;
+}
+
+.social-container-2{
+  margin-left: 30%;
+}
+
+.social{
+  width: 2.6rem;
+}
+
+aside{
+  height: auto;
+}
+}
+
+/* Mobile phones */
+@media only screen and (max-width: 480px){
   input{
     display: none;
+   }
+
+   nav{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    height: 14vh;
   }
-  nav{
-    gap: 3rem;
-    height: 15vh;
+
+   .nav-items{
+    font-size: small;
   }
-  .nav-items{
-    font-size: medium;
-    color: whitesmoke;
-  }
-  .nav-img{
-    width: 4rem;
-  }
-  i{
-    font-size: medium;
-    margin-left: -2rem;
-  }
-  .fa-magnifying-glass{
-    margin-left: -1px;
+
+  .trends{
+    font-size: 3rem;
     color: white;
-    font-size: medium;
+    text-shadow: 0 0 23px black;
+    margin: 30px 0 0 0;
+    letter-spacing: 20px;
+    padding: 1rem;
   }
 
-  /* head image */
-  .home-img{
-    height: 70vh;
-    object-fit: cover;
-  }
-  .home-text-1{
-    position: absolute;
-    left: 10%;
-  }
-  .home-text-2{
-    position: absolute;
-    right: 10%;
-  }
   .home-text-1, .home-text-2{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-shadow: 0 0 7px black;
-    font-size: 4rem;
-    top: 82vh;
-  }
-  #text-color{
-    color: black;
+    display: none;
   }
 
-
-
-
-
-
-
-
-
-
-
-
+  .home-text-1, .home-text-2{
+    font-size: 2.5rem;
+    top: 18vh;
+  }
 
   .slogan{
-    text-wrap: wrap;
-    font-size: 2rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    width: 55rem;
-    text-align: center;
-    padding: 6%;
-    color: whitesmoke;
+    font-size: 1.2rem;
+    padding: 12%;
+    margin-top: 4rem;
   }
+
+  .nav-items{
+    display: none;
+  }
+
+  .nav-img{
+    width: 80px;
+    position: absolute;
+  }
+
+  .fa-magnifying-glass{
+    color: white;
+    font-size: large;
+    margin-left: 18rem;
+  }
+
+  i{
+    margin-left: 8px;
+    font-size: medium;
+  }
+
+  .container{
+    gap: 25px;
+  }
+
+  main{
+    height: auto;
+  }
+
+  footer{
+    height: auto;
+  }
+
+  .flip-container{
+    height: 200px;
+    width: 150px;
+    perspective: 500px;
+    margin-top: 1rem;
+  }
+
+  .home-img{
+    display: block;
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .footer-head{
+    font-size: 0.7rem;
+  }
+
+  .footer-box-1, .footer-box-2{
+    display: none;
+  }
+
+  .social{
+    width: 1.6rem;
+  }
+
   aside{
-    height: 20vh;
+    height: auto;
+    margin-top: -270px;
+    margin-bottom: -20px;
   }
+
+  .footer-container-2, .footer-container-3{
+    display: none;
+  }
+
+  .social-container-2{
+    margin-left: 20%;
+  }
+}
+
+/* media queries for the laptop */
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px){
+  input{
+    width: 100px;
+    margin-left: -60px;
+  }
+
+  .fa-magnifying-glass{
+    margin-left: -100px;
+  }
+
+  .home-text-1{
+    position: absolute;
+    left: 4vw;
+  }
+
+  .home-text-1, .home-text-2{
+    top: 18vh;
+  }
+
+  .social-container{
+    margin-left: 10%;
+  }
+
+  .social-container-2{
+    margin-left: 50%;
+  }
+
+  .trends{
+    padding: 1rem;
+  }
+
 }
